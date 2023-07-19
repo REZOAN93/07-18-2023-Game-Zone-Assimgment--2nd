@@ -202,7 +202,7 @@ a {
   bottom: 150px;
   left: -100px;
 }
-.batch2-img{
+.batch2-img {
   position: relative;
   bottom: 150px;
   left: 320px;
@@ -219,10 +219,10 @@ a {
 .batch-img img {
   width: 14rem;
 }
-.batch2-img img{
+.batch2-img img {
   width: 14rem;
 }
-#batch2-img{
+#batch2-img {
   width: 14rem;
 }
 .inst-text {
@@ -235,7 +235,7 @@ a {
   margin-left: 20px;
   height: auto;
 }
-.inst2-text{
+.inst2-text {
   text-align: start;
   /* border: 1px solid beige; */
   flex: 1;
@@ -565,13 +565,15 @@ footer td {
   margin-top: 1.2rem;
 }
 
+.footer-link img:hover {
+  cursor: pointer;
+}
+
 /* Media Query Mobile Phone */
 @media screen and (max-width: 600px) {
   /* navbar responsive */
   * {
     margin-top: 20px;
-  
-    
   }
   nav {
     display: block;
@@ -608,7 +610,7 @@ footer td {
     padding: 10px;
     text-align: left;
   }
-  .coverPart-1{
+  .coverPart-1 {
     padding: 20px;
   }
   .coverPart-1 li {
@@ -621,7 +623,7 @@ footer td {
     margin: 10px;
   }
   /* Gamer container responsive */
-  .game-part{
+  .game-part {
     margin-bottom: 30px;
   }
   .game-box {
@@ -657,21 +659,21 @@ footer td {
 
   /* play-container responsive */
   /*  */
-  
+
   .inst-text {
-    text-align: end; 
+    text-align: end;
     margin: 10px;
     height: auto;
   }
   .inst2-text {
-    text-align: end; 
+    text-align: end;
     margin: 10px;
     height: auto;
   }
-  .inst-text h1  {
+  .inst-text h1 {
     font-size: 2.5rem;
   }
-  .inst-text p{
+  .inst-text p {
     font-size: 1.2rem;
   }
   .instan-container {
@@ -679,10 +681,10 @@ footer td {
     height: auto;
     margin-top: 1700px;
   }
-  .coverPart-2 img{
+  .coverPart-2 img {
     margin-left: 10px;
   }
-  .instan1-container{
+  .instan1-container {
     flex-direction: column;
     height: auto;
     margin-top: 100px;
@@ -700,7 +702,7 @@ footer td {
     bottom: 100px;
     left: -75px;
   }
-  .batch2-img{
+  .batch2-img {
     position: relative;
     bottom: 120px;
     left: 130px;
@@ -780,7 +782,7 @@ footer td {
   }
   .feature-img img {
     position: relative;
-        /* margin-left: 4rem; */
+    /* margin-left: 4rem; */
   }
 
   .play-des {
