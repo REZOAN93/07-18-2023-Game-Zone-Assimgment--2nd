@@ -533,11 +533,11 @@ footer td {
   /* Gamer container responsive */
   .game-box {
     flex-direction: column;
-    height: 500px;
+    height: auto;
     text-align: center;
   }
   .gamer-container {
-    height: 500px;
+    height: auto;
     /* border: 1px solid black; */
   }
   /* OnlineGame responsive */
