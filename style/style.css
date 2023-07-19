@@ -189,6 +189,14 @@ a {
   width: 88%;
   margin: auto;
 }
+.instan1-container {
+  display: flex;
+  /* align-items: center; */
+  height: auto;
+  /* border: 1px solid black; */
+  width: 88%;
+  margin: auto;
+}
 .batch-img {
   position: relative;
   bottom: 150px;
@@ -197,11 +205,9 @@ a {
 .batch2-img{
   position: relative;
   bottom: 150px;
-  right: -400px;
+  left: 320px;
 }
-#batch2-img{
-  width: 14rem;
-}
+
 .feature-img {
   flex: 1;
 }
@@ -211,6 +217,12 @@ a {
   /* margin-left: 2rem; */
 }
 .batch-img img {
+  width: 14rem;
+}
+.batch2-img img{
+  width: 14rem;
+}
+#batch2-img{
   width: 14rem;
 }
 .inst-text {
@@ -554,10 +566,12 @@ footer td {
 }
 
 /* Media Query Mobile Phone */
-@media screen and (max-width: 567px) {
+@media screen and (max-width: 600px) {
   /* navbar responsive */
   * {
-    margin: 10px auto;
+    margin-top: 20px;
+  
+    
   }
   nav {
     display: block;
@@ -578,6 +592,7 @@ footer td {
     height: auto;
     width: auto;
     flex-direction: column-reverse;
+    justify-content: center;
   }
   .cover-head {
     margin: 10px;
@@ -593,8 +608,11 @@ footer td {
     padding: 10px;
     text-align: left;
   }
+  .coverPart-1{
+    padding: 20px;
+  }
   .coverPart-1 li {
-    margin: 10px;
+    margin: 20px;
   }
   .btn-primary {
     margin: 10px;
@@ -603,13 +621,18 @@ footer td {
     margin: 10px;
   }
   /* Gamer container responsive */
+  .game-part{
+    margin-bottom: 30px;
+  }
   .game-box {
     flex-direction: column;
     height: auto;
     text-align: center;
+    margin: auto;
   }
   .gamer-container {
     height: auto;
+    margin: auto;
     /* border: 1px solid black; */
   }
   /* OnlineGame responsive */
@@ -617,7 +640,8 @@ footer td {
     width: 300px;
   }
   .online-gameContainer {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin: 10px;
     padding: 0px;
@@ -639,6 +663,11 @@ footer td {
     margin: 10px;
     height: auto;
   }
+  .inst2-text {
+    text-align: end; 
+    margin: 10px;
+    height: auto;
+  }
   .inst-text h1  {
     font-size: 2.5rem;
   }
@@ -649,6 +678,14 @@ footer td {
     flex-direction: column;
     height: auto;
     margin-top: 1700px;
+  }
+  .coverPart-2 img{
+    margin-left: 10px;
+  }
+  .instan1-container{
+    flex-direction: column;
+    height: auto;
+    margin-top: 100px;
   }
   .feature-img img {
     position: relative;
@@ -662,6 +699,11 @@ footer td {
     position: relative;
     bottom: 100px;
     left: -75px;
+  }
+  .batch2-img{
+    position: relative;
+    bottom: 120px;
+    left: 130px;
   }
   /*  */
   .play-container {
@@ -735,6 +777,10 @@ footer td {
   }
   .play-texthead {
     color: #ff42a5;
+  }
+  .feature-img img {
+    position: relative;
+        /* margin-left: 4rem; */
   }
 
   .play-des {
