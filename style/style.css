@@ -213,31 +213,113 @@ a {
   justify-content: center;
 }
 .video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    visibility: hidden;
-    background-color: rgba(0, 0, 0, 0.7);
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-  }
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
 .video-container:hover .video-overlay {
   visibility: visible;
 }
 .video-overlay .play-button {
-    font-size: 24px;
-    color: white;
-    padding: 10px 16px;
-    cursor: pointer;
-  }
-  .video-overlay .play-button:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-  }
+  font-size: 24px;
+  color: white;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+.video-overlay .play-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+/* play-container style */
+.play-container {
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 90%;
+  height: 600px;
+  /* border: 1px solid black; */
+  margin: auto;
+}
+.play-part {
+  flex: 1;
+}
+.play-img-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid black; */
+}
+.play-img-box2 {
+  position: absolute;
+  top: 255px;
+  right: 280px;
+}
+.play-img-box1 {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 150px;
+}
+#play-img {
+  width: 75%;
+  height: 75%;
+}
+#play-img2 {
+  width: 250px;
+  height: 250px;
+}
+
+.play-text {
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 150px;
+  text-align: right;
+  margin-right: 130px;
+}
+.play-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.play-instant-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.play-texthead {
+  color: #ff42a5;
+}
+
+.play-des {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* play-anytime */
+.play-anytime {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.play-instant-text {
+  align-items: center;
+  width: 100%;
+  /* border: 1px solid black; */
+  margin-top: 150px;
+  text-align: left;
+  margin-left: 130px;
+}
 
 /* Media Query Mobile Phone */
 @media screen and (max-width: 567px) {
@@ -298,19 +380,20 @@ a {
     height: auto;
   }
   /* OnlineGame responsive */
-  .onlineGame-header img{
+  .onlineGame-header img {
     width: 300px;
   }
-  .online-gameContainer{
+  .online-gameContainer {
     grid-template-columns: 1fr;
     justify-content: center;
     margin: 10px;
     padding: 0px;
   }
-  .gameBox p{
+  .gameBox p {
     padding: 0px;
     margin: 10px;
     width: 70%;
-
   }
+
+  /* play-container responsive */
 }
